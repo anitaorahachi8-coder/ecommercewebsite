@@ -34,3 +34,20 @@ font-family: "Fjalla One", sans-serif;
 #cart button:hover{
   background-color:blue;
 }
+
+#main h1{
+  text-align: center
+  color: black;
+}
+  #main{
+font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+#main button{
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
