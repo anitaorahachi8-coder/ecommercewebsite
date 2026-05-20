@@ -5,7 +5,7 @@ font-family: "Fjalla One", sans-serif;
 }
 
 #shop h1{
-  text-align: center
+  text-align: center;
   color: black;
 }
 
@@ -20,7 +20,7 @@ font-family: "Fjalla One", sans-serif;
 }
 
 #cart h1{
-  text-align: center
+  text-align: center;
   color: darkblue;
 }
 
@@ -36,7 +36,7 @@ font-family: "Fjalla One", sans-serif;
 }
 
 #main h1{
-  text-align: center
+  text-align: center;
   color: black;
 }
   #main{
