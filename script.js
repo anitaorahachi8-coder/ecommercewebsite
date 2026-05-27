@@ -20,7 +20,7 @@ function addtocart(name, price, qty){
   }
   grandTotal = Number(grandTotal) + Number(total);
   localStorage.setItem("Total",grandTotal);
-  
+  alert(name + "added to cart!");
 }
 if(document.getElementById("cartlist")){
   document.getElementById("cartlist").innerHTML = localStorage,getItem("cart");
