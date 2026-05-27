@@ -22,3 +22,8 @@ function addtocart(name, price, qty){
   localStorage.setItem("Total",grandTotal);
   
 }
+if(document.getElementById("cartlist")){
+  document.getElementById("cartlist").innerHTML = localStorage,getItem("cart");
+
+  document.getElementById("total").innerHTML = localStorage.getItem("Total");
+}
