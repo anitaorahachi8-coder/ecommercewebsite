@@ -1,7 +1,7 @@
-function addtocart(name, price, qty){
-  let name = document.getElementById(name).innerText;
-  let price = parseInt( document.getElementById(price).innerText;
-  let qty = parseInt( document.getElementById(qty).value );
+function addtocart(nameid, priceid, qtyid){
+  let name = document.getElementById(nameid).innerText;
+  let price = parseInt( document.getElementById(priceid).innerText);
+  let qty = parseInt( document.getElementById(qtyid).value );
   let total = price*qty
   let store = localStorage.getItem("cart");
   if(store == null){
@@ -23,7 +23,7 @@ function addtocart(name, price, qty){
   alert(name + "added to cart!");
 }
 if(document.getElementById("cartlist")){
-  document.getElementById("cartlist").innerHTML = localStorage,getItem("cart");
+  document.getElementById("cartlist").innerHTML = localStorage.getItem("cart");
 
   document.getElementById("total").innerHTML = localStorage.getItem("Total");
 }
