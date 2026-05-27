@@ -4,4 +4,21 @@ function addtocart(name, price, qty){
   let qty = parseInt( document.getElementById(qtyId).value );
   let total = price*qty
   let store = localStorage.getItem("cart");
+  if(store == null){
+    store = "";
+  }
+  store +=
+    "Product: "+ name +
+    "/Price: $" + price +
+    "/Quantity: "+ qty +
+    "/Amount:$" + total+
+    "<br> <br>";
+  localStorage.setItem("cart",store);
+  let grandTotal = localStorage.getItem("Total");
+  if(grandTotal == null){
+    grandTotal = 0;
+  }
+  grandTotal = Number(grandTotal) + Number(total);
+  localStorage.setItem("Total",grandTotal);
+  
 }
