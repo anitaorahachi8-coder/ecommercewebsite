@@ -27,3 +27,10 @@ if(document.getElementById("cartlist")){
 
   document.getElementById("total").innerHTML = localStorage.getItem("Total");
 }
+function clearcart(){
+  localStorage.removeItem("cart");
+  localStorage.removeItem("Total");
+  document.getElementById("cartlist").innerHTML="";
+    document.getElementById("totalprice").innerHTML="$0";
+alert("Cart has been cleared!");
+}
